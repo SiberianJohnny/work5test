@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Work5 Test</title>
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+    rel="stylesheet">
+  <!-- Styles   -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body>
+  <main class="container-xxl">
+
+    <!-- Nav Sidebar -->
+    <nav class="d-flex flex-column flex-shrink-0 p-3 text-dark bg-white nav-wrapper" style="width: 280px;">
+      <a href="/" class="d-flex align-items-center mb-md-0 me-md-auto text-dark text-decoration-none">
+        <img class="mb-3" src="img/Logo.png" alt="logo">
+      </a>
+      <ul class="nav nav-pills flex-column mb-auto">
+        <li class="nav-item">
+          <a href="#" class="nav-link text-dark" aria-current="page">
+            <svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 23 20" width="23" height="20">
+              <defs>
+                <image width="487" height="435" id="img1"
+                  href="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pg0KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE4LjEuMSwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPg0KPHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJDYXBhXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB2aWV3Qm94PSIwIDAgNDg2Ljk4OCA0ODYuOTg4IiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA0ODYuOTg4IDQ4Ni45ODg7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxnPg0KCTxnPg0KCQk8cGF0aCBkPSJNMTYuODIyLDI4NC45NjhoMzkuNjY3djE1OC42NjdjMCw5LjM1LDcuNjUsMTcsMTcsMTdoMTE2LjE2N2M5LjM1LDAsMTctNy42NSwxNy0xN1YzMjcuNDY4aDcwLjgzM3YxMTYuMTY3DQoJCQljMCw5LjM1LDcuNjUsMTcsMTcsMTdoMTEwLjVjOS4zNSwwLDE3LTcuNjUsMTctMTdWMjg0Ljk2OGg0OC4xNjdjNi44LDAsMTMuMDMzLTQuMjUsMTUuNTgzLTEwLjQ4Mw0KCQkJYzIuNTUtNi4yMzMsMS4xMzMtMTMuNi0zLjY4My0xOC40MTdMMjYwLjQ4OSwzMS4zODVjLTYuNTE3LTYuNTE3LTE3LjI4My02LjgtMjMuOC0wLjI4M0w1LjIwNiwyNTUuNzg1DQoJCQljLTUuMSw0LjgxNy02LjUxNywxMi4xODMtMy45NjcsMTguN0MzLjc4OSwyODEuMDAxLDEwLjAyMiwyODQuOTY4LDE2LjgyMiwyODQuOTY4eiBNMjQ4LjAyMiw2Ny4zNjhsMTgxLjMzMywxODMuNmgtMjQuMzY3DQoJCQljLTkuMzUsMC0xNyw3LjY1LTE3LDE3djE1OC42NjdoLTc2LjVWMzEwLjQ2OGMwLTkuMzUtNy42NS0xNy0xNy0xN0gxODkuNjU2Yy05LjM1LDAtMTcsNy42NS0xNywxN3YxMTYuMTY3SDkwLjQ4OVYyNjcuOTY4DQoJCQljMC05LjM1LTcuNjUtMTctMTctMTdINTguNzU2TDI0OC4wMjIsNjcuMzY4eiIvPg0KCTwvZz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjwvc3ZnPg0K" />
+              </defs>
+              <use href="#img1" transform="matrix(.047,0,0,.046,0,0)" />
+            </svg>
+            Главная
+          </a>
+        </li>
+        <li>
+          <a href="#" class="nav-link active-link text-dark">
+            <svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="20" height="20">
+              <defs>
+                <image width="453" height="487" id="img2"
+                  href="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pg0KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE5LjEuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPg0KPHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJDYXBhXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB2aWV3Qm94PSIwIDAgNDg2LjU2OSA0ODYuNTY5IiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA0ODYuNTY5IDQ4Ni41Njk7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxnPg0KCTxwYXRoIGQ9Ik0xNDYuMDY5LDMyMC4zNjloMjY4LjFjMzAuNCwwLDU1LjItMjQuOCw1NS4yLTU1LjJ2LTExMi44YzAtMC4xLDAtMC4zLDAtMC40YzAtMC4zLDAtMC41LDAtMC44YzAtMC4yLDAtMC40LTAuMS0wLjYNCgkJYzAtMC4yLTAuMS0wLjUtMC4xLTAuN3MtMC4xLTAuNC0wLjEtMC42Yy0wLjEtMC4yLTAuMS0wLjQtMC4yLTAuN2MtMC4xLTAuMi0wLjEtMC40LTAuMi0wLjZjLTAuMS0wLjItMC4xLTAuNC0wLjItMC42DQoJCWMtMC4xLTAuMi0wLjItMC40LTAuMy0wLjdjLTAuMS0wLjItMC4yLTAuNC0wLjMtMC41Yy0wLjEtMC4yLTAuMi0wLjQtMC4zLTAuNmMtMC4xLTAuMi0wLjItMC4zLTAuMy0wLjVjLTAuMS0wLjItMC4zLTAuNC0wLjQtMC42DQoJCWMtMC4xLTAuMi0wLjItMC4zLTAuNC0wLjVjLTAuMS0wLjItMC4zLTAuMy0wLjQtMC41cy0wLjMtMC4zLTAuNC0wLjVzLTAuMy0wLjMtMC40LTAuNGMtMC4yLTAuMi0wLjMtMC4zLTAuNS0wLjUNCgkJYy0wLjItMC4xLTAuMy0wLjMtMC41LTAuNGMtMC4yLTAuMS0wLjQtMC4zLTAuNi0wLjRjLTAuMi0wLjEtMC4zLTAuMi0wLjUtMC4zcy0wLjQtMC4yLTAuNi0wLjRjLTAuMi0wLjEtMC40LTAuMi0wLjYtMC4zDQoJCXMtMC40LTAuMi0wLjYtMC4zcy0wLjQtMC4yLTAuNi0wLjNzLTAuNC0wLjEtMC42LTAuMmMtMC4yLTAuMS0wLjUtMC4yLTAuNy0wLjJzLTAuNC0wLjEtMC41LTAuMWMtMC4zLTAuMS0wLjUtMC4xLTAuOC0wLjENCgkJYy0wLjEsMC0wLjItMC4xLTAuNC0wLjFsLTMzOS44LTQ2Ljl2LTQ3LjRjMC0wLjUsMC0xLTAuMS0xLjRjMC0wLjEsMC0wLjItMC4xLTAuNGMwLTAuMy0wLjEtMC42LTAuMS0wLjljLTAuMS0wLjMtMC4xLTAuNS0wLjItMC44DQoJCWMwLTAuMi0wLjEtMC4zLTAuMS0wLjVjLTAuMS0wLjMtMC4yLTAuNi0wLjMtMC45YzAtMC4xLTAuMS0wLjMtMC4xLTAuNGMtMC4xLTAuMy0wLjItMC41LTAuNC0wLjhjLTAuMS0wLjEtMC4xLTAuMy0wLjItMC40DQoJCWMtMC4xLTAuMi0wLjItMC40LTAuNC0wLjZjLTAuMS0wLjItMC4yLTAuMy0wLjMtMC41cy0wLjItMC4zLTAuMy0wLjVzLTAuMy0wLjQtMC40LTAuNmMtMC4xLTAuMS0wLjItMC4yLTAuMy0wLjMNCgkJYy0wLjItMC4yLTAuNC0wLjQtMC42LTAuNmMtMC4xLTAuMS0wLjItMC4yLTAuMy0wLjNjLTAuMi0wLjItMC40LTAuNC0wLjctMC42Yy0wLjEtMC4xLTAuMy0wLjItMC40LTAuM2MtMC4yLTAuMi0wLjQtMC4zLTAuNi0wLjUNCgkJYy0wLjMtMC4yLTAuNi0wLjQtMC44LTAuNWMtMC4xLTAuMS0wLjItMC4xLTAuMy0wLjJjLTAuNC0wLjItMC45LTAuNC0xLjMtMC42bC03My43LTMxYy02LjktMi45LTE0LjgsMC4zLTE3LjcsNy4yDQoJCXMwLjMsMTQuOCw3LjIsMTcuN2w2NS40LDI3LjZ2NjEuMnY5Ljd2NzQuNHY2Ni41djg0YzAsMjgsMjEsNTEuMiw0OC4xLDU0LjdjLTQuOSw4LjItNy44LDE3LjgtNy44LDI4YzAsMzAuMSwyNC41LDU0LjUsNTQuNSw1NC41DQoJCXM1NC41LTI0LjUsNTQuNS01NC41YzAtMTAtMi43LTE5LjUtNy41LTI3LjVoMTIxLjRjLTQuOCw4LjEtNy41LDE3LjUtNy41LDI3LjVjMCwzMC4xLDI0LjUsNTQuNSw1NC41LDU0LjVzNTQuNS0yNC41LDU0LjUtNTQuNQ0KCQlzLTI0LjUtNTQuNS01NC41LTU0LjVoLTI1NWMtMTUuNiwwLTI4LjItMTIuNy0yOC4yLTI4LjJ2LTM2LjZDMTI2LjA2OSwzMTcuNTY5LDEzNS43NjksMzIwLjM2OSwxNDYuMDY5LDMyMC4zNjl6IE0yMTMuMjY5LDQzMS45NjkNCgkJYzAsMTUuMi0xMi40LDI3LjUtMjcuNSwyNy41cy0yNy41LTEyLjQtMjcuNS0yNy41czEyLjQtMjcuNSwyNy41LTI3LjVTMjEzLjI2OSw0MTYuNzY5LDIxMy4yNjksNDMxLjk2OXogTTQyOC42NjksNDMxLjk2OQ0KCQljMCwxNS4yLTEyLjQsMjcuNS0yNy41LDI3LjVzLTI3LjUtMTIuNC0yNy41LTI3LjVzMTIuNC0yNy41LDI3LjUtMjcuNVM0MjguNjY5LDQxNi43NjksNDI4LjY2OSw0MzEuOTY5eiBNNDE0LjE2OSwyOTMuMzY5aC0yNjguMQ0KCQljLTE1LjYsMC0yOC4yLTEyLjctMjguMi0yOC4ydi02Ni41di03NC40di01bDMyNC41LDQ0Ljd2MTAxLjFDNDQyLjM2OSwyODAuNzY5LDQyOS42NjksMjkzLjM2OSw0MTQuMTY5LDI5My4zNjl6Ii8+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8L3N2Zz4NCg==" />
+              </defs>
+              <use href="#img2" transform="matrix(.044,0,0,.041,0,0)" />
+            </svg>
+            Мои магазины
+          </a>
+        </li>
+        <li>
+          <a href="#" class="nav-link text-dark">
+            <svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="20" height="20">
+              <defs>
+                <image width="512" height="452" id="img3"
+                  href="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pg0KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE5LjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPg0KPHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJMYXllcl8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCINCgkgdmlld0JveD0iMCAwIDUxMiA1MTIiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDUxMiA1MTI7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxnPg0KCTxnPg0KCQk8cGF0aCBkPSJNNDQ5LjUxMSwxMzcuNjQ4di04Mi4zOGMwLTkuMDcyLTQuNjY4LTE3LjIyNy0xMi40ODctMjEuODE0Yy03Ljg0OS00LjYwNS0xNy4yOS00LjctMjUuMjUxLTAuMjQ3DQoJCQljLTc2LjAyNCw0Mi41MTYtMTU4LjcyNSw2Ny4zNDUtMjQ1LjgwNSw3My44MDJjLTAuNjY3LDAuMDQ5LTc5LjM3MiwwLjM5My03OS4zNzIsMC4zOTNjLTE5Ljc2NywwLTM2LjEwNSwxNC45MjMtMzguMzY2LDM0LjA5MQ0KCQkJSDMyLjA3NUMxNC4zOSwxNDEuNDkzLDAsMTU1Ljg4MSwwLDE3My41Njd2NzAuNDY4YzAsMTcuNjg2LDE0LjM5LDMyLjA3NSwzMi4wNzUsMzIuMDc1aDE2LjE1Mw0KCQkJYzEuNjI4LDEzLjc5NSwxMC41NDQsMjUuMzgzLDIyLjc4NSwzMC43OTlsNTcuNDg1LDE1OC42NDhjMy41OTMsOS44NzUsMTMuMDY3LDE2LjUxMSwyMy41NzgsMTYuNTExaDU3LjY4Nw0KCQkJYzguMTc4LDAsMTUuODYtMy45OTksMjAuNTUxLTEwLjY5N2M0LjY5MS02LjcsNS44MjItMTUuMjg3LDMuMDMtMjIuOTZsLTQ5LjM4OS0xMzYuMjM3DQoJCQljODAuNDgyLDguMzYxLDE1Ny4wMzksMzIuNjAxLDIyNy44MTcsNzIuMTgzYzMuOTA1LDIuMTg0LDguMTY2LDMuMjczLDEyLjQyLDMuMjczYzQuNDE3LTAuMDAxLDguODMtMS4xNzUsMTIuODI5LTMuNTIxDQoJCQljNy44MTktNC41ODgsMTIuNDg5LTEyLjc0MiwxMi40ODktMjEuODE2di04Mi4zOEM0ODQuNzExLDI3NS4zNTMsNTEyLDI0NS4yMDQsNTEyLDIwOC43ODENCgkJCUM1MTIsMTcyLjM1Nyw0ODQuNzExLDE0Mi4yMDcsNDQ5LjUxMSwxMzcuNjQ4eiBNNDcuOTUxLDI1MS4zNzJIMzIuMDc1Yy00LjA0NywwLTcuMzM4LTMuMjkxLTcuMzM4LTcuMzM4di03MC40NjcNCgkJCWMwLTQuMDQ0LDMuMjkxLTcuMzM3LDcuMzM4LTcuMzM3aDE1Ljg3NlYyNTEuMzcyeiBNODAuOTMsMjg0LjI0NWMtNC44NS0yLjE3NC04LjI0Mi03LjAzOS04LjI0Mi0xMi42ODhWMTQ2LjA0NGgwLjAwMQ0KCQkJYzAtNy42NjcsNi4yMzktMTMuOTA1LDEzLjkwNi0xMy45MDVoNjcuMzMzdjE1My4zMjRjMCwwLTY3LjkyLTAuMDI2LTY4LjIxMy0wLjA0NEM4My4yMzQsMjg1LjEzMiw4Mi43MTIsMjg1LjAwNCw4MC45MywyODQuMjQ1eg0KCQkJIE0yMTAuMDkxLDQ1Ni44NTNjMC4wNCwwLjEwMSwwLjA2NiwwLjE3My0wLjA0MSwwLjMyNGMtMC4xMDUsMC4xNTEtMC4xODMsMC4xNTEtMC4yODgsMC4xNTFoLTU3LjY4Nw0KCQkJYy0wLjE0NywwLTAuMjgyLTAuMDkzLTAuMzI3LTAuMjE1TDk4LjUxNSwzMTAuMTk5aDU4LjQxMUwyMTAuMDkxLDQ1Ni44NTN6IE00MjQuNzc0LDM2Mi4yOTRjMCwwLjE3OSwwLDAuMzIyLTAuMjY3LDAuNDc5DQoJCQljLTAuMzE4LDAuMTg0LTAuNTA4LDAuMDc5LTAuNjYtMC4wMDZjLTc2LjAzNC00Mi41Mi0xNTguNDY5LTY4LjA0NS0yNDUuMTgyLTc1Ljk2di0xNTYuMDQNCgkJCWM4Ni43Mi03LjkyNywxNjkuMTU1LTMzLjQ1NCwyNDUuMTc5LTc1Ljk3YzAuMTU2LTAuMDg1LDAuMzQ5LTAuMTksMC42NjMtMC4wMDZjMC4yNjcsMC4xNTcsMC4yNjcsMC4yOTgsMC4yNjcsMC40NzdWMzYyLjI5NHoNCgkJCSBNNDQ5LjUxMSwyNTQuODczdi05Mi4xODVjMjEuNTAzLDQuMzE0LDM3Ljc1MiwyMy4zMzksMzcuNzUyLDQ2LjA5MkM0ODcuMjYzLDIzMS41MzQsNDcxLjAxMywyNTAuNTYsNDQ5LjUxMSwyNTQuODczeiIvPg0KCTwvZz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjwvc3ZnPg0K" />
+              </defs>
+              <use href="#img3" transform="matrix(.039,0,0,.044,0,0)" />
+            </svg>
+            Промоматериалы
+          </a>
+        </li>
+        <li>
+          <a href="#" class="nav-link text-dark">
+            <svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="20" height="20">
+              <defs>
+                <image width="477" height="477" id="img4"
+                  href="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pg0KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE5LjEuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPg0KPHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJDYXBhXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB2aWV3Qm94PSIwIDAgNDc2LjMgNDc2LjMiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDQ3Ni4zIDQ3Ni4zOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+DQo8Zz4NCgk8Zz4NCgkJPHBhdGggZD0iTTQxMS43NSwyNTAuMmgtMTg1LjZWNjQuNmMwLTcuNS02LTEzLjUtMTMuNS0xMy41Yy0xMTcuMiwwLTIxMi42LDk1LjQtMjEyLjYsMjEyLjZzOTUuNCwyMTIuNiwyMTIuNiwyMTIuNg0KCQkJczIxMi42LTk1LjQsMjEyLjYtMjEyLjZDNDI1LjI1LDI1Ni4zLDQxOS4xNSwyNTAuMiw0MTEuNzUsMjUwLjJ6IE0yMTIuNjUsNDQ5LjNjLTEwMi4zLDAtMTg1LjYtODMuMy0xODUuNi0xODUuNg0KCQkJYzAtOTcuOCw3Ni0xNzguMiwxNzIuMS0xODUuMXYxODUuMWMwLDcuNSw2LDEzLjUsMTMuNSwxMy41aDE4NS4xQzM5MC44NSwzNzMuMywzMTAuNDUsNDQ5LjMsMjEyLjY1LDQ0OS4zeiIvPg0KCQk8cGF0aCBkPSJNNDc2LjI1LDIxMS45Yy0wLjItNTEuNi0xOS4xLTEwMS4zLTUzLjItMTQwQzM4Mi42NSwyNi4yLDMyNC42NSwwLDI2My42NSwwYy03LjUsMC0xMy41LDYtMTMuNSwxMy41djE5OS4xDQoJCQljMCw3LjUsNiwxMy41LDEzLjUsMTMuNWgxOTkuMWwwLDBjNy41LDAsMTMuNS02LDEzLjUtMTMuNUM0NzYuMjUsMjEyLjQsNDc2LjI1LDIxMi4yLDQ3Ni4yNSwyMTEuOXogTTI3Ny4xNSwxOTkuMlYyNy42DQoJCQljNDguMiwzLjUsOTMuNCwyNS44LDEyNS42LDYyLjNjMjcsMzAuNSw0Myw2OC45LDQ2LDEwOS4zSDI3Ny4xNXoiLz4NCgk8L2c+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8L3N2Zz4NCg==" />
+              </defs>
+              <use href="#img4" transform="matrix(.042,0,0,.042,0,0)" />
+            </svg>
+            Статистика
+          </a>
+        </li>
+        <li>
+          <a href="#" class="nav-link text-dark">
+            <svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="20" height="20">
+              <defs>
+                <image width="333" height="335" id="img5"
+                  href="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pg0KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE5LjEuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPg0KPHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJDYXBhXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB2aWV3Qm94PSIwIDAgMzM0Ljg3NyAzMzQuODc3IiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCAzMzQuODc3IDMzNC44Nzc7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxnPg0KCTxwYXRoIGQ9Ik0zMzMuMTk2LDE1NS45OTloLTE2LjA2N1Y4Mi4wOWMwLTE3LjcxOS0xNC40MTUtMzIuMTM0LTMyLjEzNC0zMi4xMzRoLTIxLjc2MUwyNDAuOTY1LDkuOTE3DQoJCUMyMzcuNTcxLDMuNzk4LDIzMS4xMTIsMCwyMjQuMTA3LDBjLTMuMjY1LDAtNi41MDQsMC44NDItOS4zNjQsMi40MjlsLTg1LjQ2NCw0Ny41MjZIMzMuODE1DQoJCWMtMTcuNzE5LDAtMzIuMTM0LDE0LjQxNS0zMi4xMzQsMzIuMTM0djIyMC42NTNjMCwxNy43MTksMTQuNDE1LDMyLjEzNCwzMi4xMzQsMzIuMTM0aDI1MS4xOA0KCQljMTcuNzE5LDAsMzIuMTM0LTE0LjQxNSwzMi4xMzQtMzIuMTM0di02NC44MDJoMTYuMDY3VjE1NS45OTl6IE0yODQuOTk1LDYyLjgwOWM5Ljg5NywwLDE3Ljk4Miw3LjUxOSwxOS4wNjgsMTcuMTRoLTI0LjE1Mg0KCQlsLTkuNTI1LTE3LjE0SDI4NC45OTV6IE0yMjAuOTk2LDEzLjY2M2MzLjAxNC0xLjY5LDcuMDctMC41MDgsOC43MzQsMi40OTRsMzUuNDc2LDYzLjc4NkgxMDEuNzk4TDIyMC45OTYsMTMuNjYzeg0KCQkgTTMwNC4yNzUsMzAyLjc0MmMwLDEwLjYzLTguNjUxLDE5LjI4MS0xOS4yODEsMTkuMjgxSDMzLjgxNWMtMTAuNjMsMC0xOS4yODEtOC42NTEtMTkuMjgxLTE5LjI4MVY4Mi4wOQ0KCQljMC0xMC42Myw4LjY1MS0xOS4yODEsMTkuMjgxLTE5LjI4MWg3Mi4zNTNMNzUuMzQ1LDc5Ljk1SDM3LjgzMmMtMy41NTQsMC02LjQyNywyLjg3OS02LjQyNyw2LjQyN3MyLjg3Myw2LjQyNyw2LjQyNyw2LjQyN2gxNC4zOTYNCgkJaDIzNC44M2gxNy4yMTd2NjMuMjAxaC00Ni45OTljLTIxLjgyNiwwLTM5LjU4OSwxNy43NjQtMzkuNTg5LDM5LjU4OXYyLjc2NGMwLDIxLjgyNiwxNy43NjQsMzkuNTg5LDM5LjU4OSwzOS41ODloNDYuOTk5VjMwMi43NDJ6DQoJCSBNMzIwLjM0MiwyMjUuMDg3aC0zLjIxM2gtNTkuODUzYy0xNC43NDMsMC0yNi43MzYtMTEuOTkyLTI2LjczNi0yNi43MzZ2LTIuNzY0YzAtMTQuNzQzLDExLjk5Mi0yNi43MzYsMjYuNzM2LTI2LjczNmg1OS44NTMNCgkJaDMuMjEzVjIyNS4wODd6IE0yNzYuOTYxLDE5Ny40OTdjMCw3Ljg0MS02LjM1LDE0LjE5LTE0LjE5LDE0LjE5Yy03Ljg0MSwwLTE0LjE5LTYuMzUtMTQuMTktMTQuMTlzNi4zNS0xNC4xOSwxNC4xOS0xNC4xOQ0KCQlDMjcwLjYxMiwxODMuMzA2LDI3Ni45NjEsMTg5LjY2MiwyNzYuOTYxLDE5Ny40OTd6Ii8+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8L3N2Zz4NCg==" />
+              </defs>
+              <use href="#img5" transform="matrix(.06,0,0,.059,0,0)" />
+            </svg>
+            Баланс
+          </a>
+        </li>
+        <li>
+          <a href="#" class="nav-link text-dark">
+            <svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 19" width="20" height="19">
+              <defs>
+                <image width="564" height="537" id="img6"
+                  href="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pg0KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE5LjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPg0KPHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJDYXBhXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB2aWV3Qm94PSIwIDAgNTYzLjQzIDU2My40MyIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNTYzLjQzIDU2My40MzsiIHhtbDpzcGFjZT0icHJlc2VydmUiPg0KPHBhdGggZD0iTTI4MC43OSwzMTQuNTU5YzgzLjI2NiwwLDE1MC44MDMtNjcuNTM4LDE1MC44MDMtMTUwLjgwM1MzNjQuMDU1LDEzLjQxNSwyODAuNzksMTMuNDE1UzEyOS45ODcsODAuOTUzLDEyOS45ODcsMTYzLjc1Ng0KCVMxOTcuNTI0LDMxNC41NTksMjgwLjc5LDMxNC41NTl6IE0yODAuNzksNTIuNzM1YzYxLjA2MSwwLDExMS4wMjEsNDkuOTU5LDExMS4wMjEsMTExLjAyMVMzNDEuODUxLDI3NC43NzYsMjgwLjc5LDI3NC43NzYNCglzLTExMS4wMjEtNDkuOTU5LTExMS4wMjEtMTExLjAyMVMyMTkuNzI4LDUyLjczNSwyODAuNzksNTIuNzM1eiIvPg0KPHBhdGggZD0iTTE5Ljg5MSw1NTAuMDE1aDUyMy42NDhjMTEuMTAyLDAsMTkuODkxLTguNzg5LDE5Ljg5MS0xOS44OTFjMC0xMDQuMDgyLTg0LjY1My0xODkuMTk4LTE4OS4xOTgtMTg5LjE5OEgxODkuMTk4DQoJQzg1LjExNiwzNDAuOTI2LDAsNDI1LjU3OSwwLDUzMC4xMjRDMCw1NDEuMjI2LDguNzg5LDU1MC4wMTUsMTkuODkxLDU1MC4wMTV6IE0xODkuMTk4LDM4MC43MDhoMTg1LjAzNA0KCWM3NS44NjQsMCwxMzguMzEzLDU2LjQzNiwxNDguMDI4LDEyOS41MjRINDEuMTdDNTAuODg0LDQzNy42MDcsMTEzLjMzNCwzODAuNzA4LDE4OS4xOTgsMzgwLjcwOHoiLz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjwvc3ZnPg0K" />
+              </defs>
+              <style></style>
+              <use href="#img6" transform="matrix(.035,0,0,.035,0,0)" />
+            </svg>
+            Персональные данные
+          </a>
+        </li>
+        <li>
+          <a href="#" class="nav-link text-dark">
+            <svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="20" height="20">
+              <defs>
+                <image width="512" height="512" id="img7"
+                  href="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pg0KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE5LjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPg0KPHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJDYXBhXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB2aWV3Qm94PSIwIDAgNTEyIDUxMiIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNTEyIDUxMjsiIHhtbDpzcGFjZT0icHJlc2VydmUiPg0KPGc+DQoJPGc+DQoJCTxnPg0KCQkJPGNpcmNsZSBjeD0iMjU2IiBjeT0iMzc4LjUiIHI9IjI1Ii8+DQoJCQk8cGF0aCBkPSJNMjU2LDBDMTE0LjUxNiwwLDAsMTE0LjQ5NywwLDI1NmMwLDE0MS40ODQsMTE0LjQ5NywyNTYsMjU2LDI1NmMxNDEuNDg0LDAsMjU2LTExNC40OTcsMjU2LTI1Ng0KCQkJCUM1MTIsMTE0LjUxNiwzOTcuNTAzLDAsMjU2LDB6IE0yNTYsNDcyYy0xMTkuMzc3LDAtMjE2LTk2LjYwNy0yMTYtMjE2YzAtMTE5LjM3Nyw5Ni42MDctMjE2LDIxNi0yMTYNCgkJCQljMTE5LjM3NywwLDIxNiw5Ni42MDcsMjE2LDIxNkM0NzIsMzc1LjM3NywzNzUuMzkzLDQ3MiwyNTYsNDcyeiIvPg0KCQkJPHBhdGggZD0iTTI1NiwxMjguNWMtNDQuMTEyLDAtODAsMzUuODg4LTgwLDgwYzAsMTEuMDQ2LDguOTU0LDIwLDIwLDIwczIwLTguOTU0LDIwLTIwYzAtMjIuMDU2LDE3Ljk0NC00MCw0MC00MA0KCQkJCWMyMi4wNTYsMCw0MCwxNy45NDQsNDAsNDBjMCwyMi4wNTYtMTcuOTQ0LDQwLTQwLDQwYy0xMS4wNDYsMC0yMCw4Ljk1NC0yMCwyMHY1MGMwLDExLjA0Niw4Ljk1NCwyMCwyMCwyMA0KCQkJCWMxMS4wNDYsMCwyMC04Ljk1NCwyMC0yMHYtMzIuNTMxYzM0LjQ2Ni04LjkwMyw2MC00MC4yNiw2MC03Ny40NjlDMzM2LDE2NC4zODgsMzAwLjExMiwxMjguNSwyNTYsMTI4LjV6Ii8+DQoJCTwvZz4NCgk8L2c+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8L3N2Zz4NCg==" />
+              </defs>
+              <style></style>
+              <use href="#img7" transform="matrix(.039,0,0,.039,0,0)" />
+            </svg>
+            FAQ
+          </a>
+        </li>
+        <li>
+          <a href="#" class="nav-link text-dark">
+            <svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="20" height="20">
+              <defs>
+                <image width="384" height="384" id="img8"
+                  href="data:image/svg+xml;base64,PHN2ZyBoZWlnaHQ9IjM4NHB0IiB2aWV3Qm94PSIwIDAgMzg0IDM4NCIgd2lkdGg9IjM4NHB0IiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwYXRoIGQ9Im0yMi4xNzU3ODEgMTQyLjkwMjM0NGM4LjIyMjY1NyAzLjIyNjU2MiAxNy41MTE3MTktLjg1NTQ2OSAyMC43MjY1NjMtOS4wNzgxMjUgMjQuMTY3OTY4LTYxLjg1NTQ2OSA4Mi42OTE0MDYtMTAxLjgyNDIxOSAxNDkuMDk3NjU2LTEwMS44MjQyMTlzMTI0LjkyOTY4OCAzOS45Njg3NSAxNDkuMDk3NjU2IDEwMS44MjQyMTljMi40NjA5MzggNi4zMjAzMTIgOC41MTE3MTkgMTAuMTc1NzgxIDE0LjkxMDE1NiAxMC4xNzU3ODEgMS45Mjk2ODggMCAzLjkwMjM0NC0uMzUxNTYyIDUuODE2NDA3LTEuMTA1NDY5IDguMjMwNDY5LTMuMjE0ODQzIDEyLjI5Njg3NS0xMi40OTYwOTMgOS4wODU5MzctMjAuNzI2NTYyLTI5LjAxNTYyNS03NC4yMDcwMzEtOTkuMjMwNDY4LTEyMi4xNjc5NjktMTc4LjkxMDE1Ni0xMjIuMTY3OTY5cy0xNDkuODk0NTMxIDQ3Ljk2MDkzOC0xNzguOTAyMzQ0IDEyMi4xNzU3ODFjLTMuMjE4NzUgOC4yMzA0NjkuODQ3NjU2IDE3LjUxMTcxOSA5LjA3ODEyNSAyMC43MjY1NjN6bTAgMCIvPjxwYXRoIGQ9Im0zMTkuMTEzMjgxIDE3Ny40ODA0NjljLTcuMjQyMTg3LTYzLjc2MTcxOS02MS40NDkyMTktMTEzLjQ4MDQ2OS0xMjcuMTEzMjgxLTExMy40ODA0NjlzLTExOS44NzEwOTQgNDkuNzE4NzUtMTI3LjExMzI4MSAxMTMuNDgwNDY5Yy0zNi45MDIzNDQgNy4wODU5MzctNjQuODg2NzE5IDM5LjU3NDIxOS02NC44ODY3MTkgNzguNTE5NTMxIDAgNDQuMTEzMjgxIDM1Ljg4NjcxOSA4MCA4MCA4MCA4LjgzMjAzMSAwIDE2LTcuMTY3OTY5IDE2LTE2di0xMjhjMC01Mi45Mzc1IDQzLjA2MjUtOTYgOTYtOTZzOTYgNDMuMDYyNSA5NiA5NnYxNDRjMCA4LjgyNDIxOS03LjE3NTc4MSAxNi0xNiAxNmgtMzJjLTguODI0MjE5IDAtMTYtNy4xNzU3ODEtMTYtMTYgMC04LjgzMjAzMS03LjE2Nzk2OS0xNi0xNi0xNnMtMTYgNy4xNjc5NjktMTYgMTZjMCAyNi40NzI2NTYgMjEuNTI3MzQ0IDQ4IDQ4IDQ4aDMyYzI2LjQ3MjY1NiAwIDQ4LTIxLjUyNzM0NCA0OC00OHYtMS42MDkzNzVjMzYuNDcyNjU2LTcuNDM3NSA2NC0zOS43NTc4MTMgNjQtNzguMzkwNjI1IDAtMzguOTQ1MzEyLTI3Ljk4NDM3NS03MS40MzM1OTQtNjQuODg2NzE5LTc4LjUxOTUzMXptLTI4Ny4xMTMyODEgNzguNTE5NTMxYzAtMjAuODU1NDY5IDEzLjM4MjgxMi0zOC41OTM3NSAzMi00NS4xOTkyMTl2OTAuMzk4NDM4Yy0xOC42MTcxODgtNi42MDU0NjktMzItMjQuMzQzNzUtMzItNDUuMTk5MjE5em0yODggNDUuMTk5MjE5di05MC4zOTg0MzhjMTguNjE3MTg4IDYuNjA1NDY5IDMyIDI0LjM0Mzc1IDMyIDQ1LjE5OTIxOXMtMTMuMzgyODEyIDM4LjU5Mzc1LTMyIDQ1LjE5OTIxOXptMCAwIi8+PC9zdmc+" />
+              </defs>
+              <style></style>
+              <use href="#img8" transform="matrix(.052,0,0,.052,0,0)" />
+            </svg>
+            Техподдержка
+          </a>
+        </li>
+        <li>
+          <a href="#" class="nav-link text-dark">
+            <svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="20" height="20">
+              <defs>
+                <image width="512" height="512" id="img9"
+                  href="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pg0KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE5LjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPg0KPHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJDYXBhXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB2aWV3Qm94PSIwIDAgNTEyIDUxMiIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNTEyIDUxMjsiIHhtbDpzcGFjZT0icHJlc2VydmUiPg0KPGc+DQoJPGc+DQoJCTxwYXRoIGQ9Ik0yNTUuMTUsNDY4LjYyNUg2My43ODdjLTExLjczNywwLTIxLjI2Mi05LjUyNi0yMS4yNjItMjEuMjYyVjY0LjYzOGMwLTExLjczNyw5LjUyNi0yMS4yNjIsMjEuMjYyLTIxLjI2MkgyNTUuMTUNCgkJCWMxMS43NTgsMCwyMS4yNjItOS41MDQsMjEuMjYyLTIxLjI2MlMyNjYuOTA4LDAuODUsMjU1LjE1LDAuODVINjMuNzg3QzI4LjYxOSwwLjg1LDAsMjkuNDcsMCw2NC42Mzh2MzgyLjcyNA0KCQkJYzAsMzUuMTY4LDI4LjYxOSw2My43ODcsNjMuNzg3LDYzLjc4N0gyNTUuMTVjMTEuNzU4LDAsMjEuMjYyLTkuNTA0LDIxLjI2Mi0yMS4yNjINCgkJCUMyNzYuNDEyLDQ3OC4xMjksMjY2LjkwOCw0NjguNjI1LDI1NS4xNSw0NjguNjI1eiIvPg0KCTwvZz4NCjwvZz4NCjxnPg0KCTxnPg0KCQk8cGF0aCBkPSJNNTA1LjY2NCwyNDAuODYxTDM3Ni4zODgsMTEzLjI4NmMtOC4zMzUtOC4yNS0yMS44MTUtOC4xNDMtMzAuMDY1LDAuMjEzcy04LjE2NSwyMS44MTUsMC4yMTMsMzAuMDY1bDkyLjM4NSw5MS4xNzMNCgkJCUgxOTEuMzYyYy0xMS43NTgsMC0yMS4yNjIsOS41MDQtMjEuMjYyLDIxLjI2MmMwLDExLjc1OCw5LjUwNCwyMS4yNjMsMjEuMjYyLDIxLjI2M2gyNDcuNTU5bC05Mi4zODUsOTEuMTczDQoJCQljLTguMzc3LDguMjUtOC40NDEsMjEuNzA5LTAuMjEzLDMwLjA2NWM0LjE2Nyw0LjIxLDkuNjUzLDYuMzM2LDE1LjEzOSw2LjMzNmM1LjQwMSwwLDEwLjgwMS0yLjA0MSwxNC45MjYtNi4xMjRsMTI5LjI3Ni0xMjcuNTc1DQoJCQljNC4wNC0zLjk5Nyw2LjMzNi05LjQ0MSw2LjMzNi0xNS4xMzlDNTEyLDI1MC4zMDIsNTA5LjcyNSwyNDQuODgsNTA1LjY2NCwyNDAuODYxeiIvPg0KCTwvZz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjwvc3ZnPg0K" />
+              </defs>
+              <style></style>
+              <use href="#img9" transform="matrix(.039,0,0,.039,0,0)" />
+            </svg>
+            Выход
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <section>
+      <!-- Breadcrumbs -->
+      <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="#">Главная</a></li>
+          <li class="breadcrumb-item" aria-current="page">Мои магазины</li>
+        </ol>
+      </nav>
+
+      <!-- Create shop modal -->
+      <button type="button" class="btn create-shop-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        <span>+</span>
+        Создать свой магазин
+      </button>
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <form class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Создать магазин</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div class="row select-wrapper">
+                <div class="select col-5">
+                  Шаблон
+                  <select class="form-select form-select-lg mt-1">
+                    <option value="Стандартный" selected>Стандартный</option>
+                    <option value="value2">Значение 2</option>
+                    <option value="value3">Значение 3</option>
+                  </select>
+                </div>
+                <div class="select col-5">
+                  Цветовая схема
+                  <select class="form-select form-select-lg mt-1">
+                    <option value="Классическая" selected>Классическая</option>
+                    <option value="value2">Значение 2</option>
+                    <option value="value3">Значение 3</option>
+                  </select>
+                </div>
+              </div>
+              <label class="domen-input-label mt-3 mb-1" for="domen-input">
+                Домен
+              </label>
+              <div class="row input-group input-group-lg">
+                <input type="text" class="form-control domen-input col-9" id="domen-input"
+                  placeholder="Например: ivangrozniy" aria-label="Domen name" aria-describedby="basic-addon2">
+                <span class="input-group-text domen-input-ending col-3" id="basic-addon2">.work5.ru</span>
+              </div>
+              <div class="row modal-disclaimer mt-5">
+                <img src="img/warning.svg" alt="disclaimer" class="col-1">
+                <p class="col-11 disclaimer-text">В названии домена разрешены латиница и “-”, запрещается использовать
+                  словосочетание
+                  Work 5. После
+                  создания магазина Вы сможете прикрутить свой домен (например ivangrozniy.ru). Подробнее по <a
+                    href="#">ссылке</a></p>
+              </div>
+            </div>
+            <div class="row modal-footer">
+              <button type="button" class="btn btn-cancel col-3" data-bs-dismiss="modal">Отмена</button>
+              <button type="submit" class="btn col-3">Создать</button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <!-- Store management -->
+      <h2 class="store-management-title mt-5 mb-5">Управление магазинами</h2>
+      <table class="table table-borderless align-middle store-management-table">
+        <thead>
+          <tr>
+            <th scope="col" class="table-cell">№</th>
+            <th scope="col" class="table-cell">Название</th>
+            <th scope="col" class="table-cell">Адрес</th>
+            <th scope="col" class="table-cell">Действие</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td scope="row" class="table-cell">12345</th>
+            <td class="table-cell">Дипломная работа</td>
+            <td class="table-cell">http://www.work5.ru/services</td>
+            <td class="table-cell table-cell-btns">
+              <button type="button" class="btn table-button" data-bs-dismiss="modal">
+                <img src="img/pencil.svg">
+                Редактировать
+              </button>
+              <button type="submit" class="btn btn-cancel table-button">
+                <img src="img/cancel.svg">
+                Редактировать
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <td scope="row" class="table-cell">12345</th>
+            <td class="table-cell">Дипломная работа</td>
+            <td class="table-cell">http://www.work5.ru/services</td>
+            <td class="table-cell table-cell-btns">
+              <button type="button" class="btn table-button" data-bs-dismiss="modal">
+                <img src="img/pencil.svg">
+                Редактировать
+              </button>
+              <button type="submit" class="btn btn-cancel table-button">
+                <img src="img/cancel.svg">
+                Редактировать
+              </button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <!-- Account -->
+      <div class="account-wrapper">
+        <button type="button" class="btn position-relative account-mail-button">
+          <img src="img/envelope.svg">
+          <span
+            class="position-absolute translate-middle p-1 bg-danger border border-light rounded-circle new-msg-circle">
+            <span class="visually-hidden">New alerts</span>
+          </span>
+        </button>
+        <div class="user-wrapper">
+          <img src="img/user-avatar.png" alt="avatar">
+          <p>Максим Добжанский</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
